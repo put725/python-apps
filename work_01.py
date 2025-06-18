@@ -29,4 +29,5 @@ while o == "Yes":
             c += 1
     o = input("もう一度やりますか？ [Yes or No]")
     
+    
 # print("終了")
