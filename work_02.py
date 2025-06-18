@@ -10,7 +10,7 @@ while not(o == "No"):
     randomtime = random.randint(5, 15)
     time.sleep(randomtime)
     start_time = time.time()
-    input_line = input("！！！！！")
+    input_line = input("！！！！！！")
     end_time = time.time()
     j = end_time - start_time
     j = round(j,4)
@@ -20,4 +20,5 @@ while not(o == "No"):
         print(f"反応速度:{j}")
         time.sleep(1)
         o = input("もう一度やりますか？ [Yes or No]")
+
 # print("終了")

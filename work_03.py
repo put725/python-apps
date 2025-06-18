@@ -53,11 +53,13 @@ dict = {
 正解 = 0
 総問題 = 0
 正解率 = 0
+n = []
 print("!!全国特産物都道府県当てクイズ!!" \
 "(参考元URL[https://www.zenkyozu.co.jp/wp-content/uploads/2011/06/45a75d571dc57e97f31e356d5fec9590.pdf])")
 input("ゲーム説明:辞書からランダムで１問選択されて[〇〇はどこの都道府県の特産物でしょう]と表示されるので答えてください。" \
     "EnterでOK")
 while True:
+    総問題 += 1
     if 正解 == 47:
         print("全問回答済")
         break
@@ -65,14 +67,17 @@ while True:
     問題,答え = random_q
     回答 = input(f"{問題}はどこの都道府県の特産物でしょう")
     if 回答 == "exit":
+        総問題 = -1
         break
     elif 回答 == 答え:
         print("正解")
-        総問題 += 1
         正解 += 1 
     else:
         print("不正解")
-        総問題 += 1
+        n.append(f"{問題}→{答え}")
+        print(f"正解は{答え}でした")
 正解率 = int(正解) / int(総問題) * 100
 print(f"正解率:{int(float(正解率))}%")
+for i in range(len(n)):
+    print(n[i])
 # print("終了")
