@@ -28,4 +28,4 @@ while o == "Yes":
             print(f"答えは{random_number}です。")
             c += 1
     o = input("もう一度やりますか？ [Yes or No]")
-# print("終了")
+# print("終了") 
