@@ -86,4 +86,4 @@ while True:
 print(f"正解率:{int(float(正解率))}%")
 for i in range(len(n)):
     print(n[i])
-    # print("終了")　　
+    # print("終了")　 　
