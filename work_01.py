@@ -22,6 +22,7 @@ while o == "Yes":
              print(f"{c}回目で正解。")
              w = 1
         else:
+            c += 1
             print("不正解")
         if c == 5:
             print(f"答えは{random_number}です。")
