@@ -5,7 +5,6 @@ c = 1
 while o == "Yes":
     w = 0
     random_number = random.randint(1, 100)
-    print(random_number)
     if random_number >= 70:
         if random_number >= 85:
             print("かなり大きい")
