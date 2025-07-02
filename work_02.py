@@ -20,4 +20,4 @@ while not(o == "No"):
         print(f"反応速度:{j}")
         time.sleep(1)
         o = input("もう一度やりますか？ [Yes or No]")
-# print("終了")
+# print("終了")　
